@@ -1,0 +1,13 @@
+# Compiled Java classes
+bin/
+*.class
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
