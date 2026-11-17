@@ -129,6 +129,11 @@ d:/project 2/
 │       ├── 04_completion_status_breakdown.png
 │       ├── 05_category_duration_heatmap.png
 │       └── 06_attendance_score_boxplot.png
+├── web/                           # Interactive Web Portal (Flask & Bootstrap 5)
+│   ├── app.py                     # Flask Web Server & REST API
+│   └── templates/
+│       └── index.html             # Single-Page Web Dashboard & Architecture Viewer
+├── run_website.bat                # 1-Click Windows Launcher for Web Portal
 └── src/                           # Java source code
     └── com/vcet/courseenrollment/
         ├── Main.java              # Console entry point & interactive menu
@@ -198,6 +203,36 @@ You can also launch Jupyter Notebook:
 ```bash
 jupyter notebook python/enrollment_analysis.ipynb
 ```
+
+---
+
+### 4. Running the Interactive Web Portal & Dashboard
+
+You can run the web dashboard with a single command:
+
+#### Option A: 1-Click Windows Batch Script
+Simply double-click `run_website.bat` or run:
+```powershell
+.\run_website.bat
+```
+
+#### Option B: Python Command
+```powershell
+python web/app.py
+```
+
+Then open your browser and navigate to:
+👉 **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
+
+**Web Portal Features:**
+- 📊 **Live Dashboard Overview:** Real-time KPI counters (Students, Courses, Active Registrations, Completed, Attendance %, Average Marks).
+- 📝 **Course Registration Portal:** Real-time duplicate registration protection & seat capacity validation banner.
+- 📚 **Course Catalog:** Live available seats status tags (`AVAILABLE`, `FILLING FAST`, `FULL`) and capacity progress meters.
+- 👥 **Student Directory:** Searchable student list with department filters and Add Student modal.
+- 🎯 **Participation & Performance Tracker:** Update attendance percentages and assessment marks with immediate database synchronization.
+- 📈 **Analytical Reports:** Three live analytical reports with utilization and completion percentages.
+- 🖼️ **Python Visualizations Gallery:** Embedded high-resolution plots with one-click re-execution of the Python analytics pipeline.
+- 📑 **Architecture & Testing Viewer:** Architectural layers, BCNF normalization documentation, and the 13/13 passing software test cases.
 
 ---
 
